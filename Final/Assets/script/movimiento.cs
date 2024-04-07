@@ -20,18 +20,37 @@ public class Movimiento : MonoBehaviour
             movimiento += Vector3.up;
             animator.Play("arriba");
         }
+        else if (Input.GetKey(KeyCode.UpArrow))
+        {
+            movimiento += Vector3.up;
+            animator.Play("arriba");
+        }
         else if (Input.GetKey(KeyCode.S))
         {
             movimiento += Vector3.down;
             animator.Play("abajo");
         }
-
+        else if (Input.GetKey(KeyCode.DownArrow))
+        {
+            movimiento += Vector3.down;
+            animator.Play("abajo");
+        }
         if (Input.GetKey(KeyCode.A))
         {
             movimiento += Vector3.left;
             animator.Play("izquierda");
         }
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            movimiento += Vector3.left;
+            animator.Play("izquierda");
+        }
         else if (Input.GetKey(KeyCode.D))
+        {
+            movimiento += Vector3.right;
+            animator.Play("derecha");
+        }
+        else if (Input.GetKey(KeyCode.RightArrow))
         {
             movimiento += Vector3.right;
             animator.Play("derecha");
