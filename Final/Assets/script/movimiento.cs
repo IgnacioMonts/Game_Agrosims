@@ -20,7 +20,7 @@ public class Movimiento : MonoBehaviour
             movimiento += Vector3.up;
             animator.Play("arriba");
         }
-        else if (Input.GetKey(KeyCode.UpArrow))
+        else if (Input.GetKey(KeyCode.UpArrow)) //aplica movimiento con tecla arriba
         {
             movimiento += Vector3.up;
             animator.Play("arriba");
@@ -30,7 +30,7 @@ public class Movimiento : MonoBehaviour
             movimiento += Vector3.down;
             animator.Play("abajo");
         }
-        else if (Input.GetKey(KeyCode.DownArrow))
+        else if (Input.GetKey(KeyCode.DownArrow)) //aplica movimiento con tecla abajo
         {
             movimiento += Vector3.down;
             animator.Play("abajo");
@@ -40,7 +40,7 @@ public class Movimiento : MonoBehaviour
             movimiento += Vector3.left;
             animator.Play("izquierda");
         }
-        else if (Input.GetKey(KeyCode.LeftArrow))
+        else if (Input.GetKey(KeyCode.LeftArrow)) //aplica movimiento con tecla izquierda
         {
             movimiento += Vector3.left;
             animator.Play("izquierda");
@@ -50,7 +50,7 @@ public class Movimiento : MonoBehaviour
             movimiento += Vector3.right;
             animator.Play("derecha");
         }
-        else if (Input.GetKey(KeyCode.RightArrow))
+        else if (Input.GetKey(KeyCode.RightArrow)) //aplica movimiento con tecla derecha
         {
             movimiento += Vector3.right;
             animator.Play("derecha");
