@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64470ee75ce5a48fe8e85b219bbff705
+guid: 1424332fdc6caea42a19caf46f28c7f5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -45,7 +45,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: FG_Crops_Wheat_0
+      name: Setting menu_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 11
+        y: 10
+        width: 106
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9870934d243e101428bd185864807e80
-      internalID: 1594954227
+      spriteID: 424bfc8164bbefc448704fa656419efe
+      internalID: 659121779
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: FG_Crops_Wheat_1
+      name: Setting menu_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
+        x: 139
+        y: 10
+        width: 106
+        height: 122
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,50 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4433245853c144d45967d8327e13ac7b
-      internalID: 225658783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FG_Crops_Wheat_2
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1a0648c5974612c46aad64ee1914cece
-      internalID: 885446507
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: FG_Crops_Wheat_3
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 85da5c90f16c9b84291614981a77f29c
-      internalID: 1335400756
+      spriteID: 150569d6640027a41a0eb03802f14113
+      internalID: -769142010
       vertices: []
       indices: 
       edges: []
@@ -204,10 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      FG_Crops_Wheat_0: 1594954227
-      FG_Crops_Wheat_1: 225658783
-      FG_Crops_Wheat_2: 885446507
-      FG_Crops_Wheat_3: 1335400756
+      Setting menu_0: 659121779
+      Setting menu_1: -769142010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
