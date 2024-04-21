@@ -26,7 +26,7 @@ public class ajustes : MonoBehaviour
         }
     }
 
-    /*
+    
     public void Cerrar(){
         if(salir){
             pantallaAjustes.SetActive(true);
@@ -37,5 +37,5 @@ public class ajustes : MonoBehaviour
             HUD.SetActive(true);
             salir = true;
         }
-    }*/
+    }
 }
