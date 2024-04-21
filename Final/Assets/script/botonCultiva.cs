@@ -17,7 +17,6 @@ public class botonCultiva : MonoBehaviour
 		if (Player)
 		{
 			cultivo.SetActive(true);
-			boton.SetActive(true);
 			botonPrincipal.SetActive(false);
 			puntaje.RestarPuntos(cantidadPuntos);
 		}

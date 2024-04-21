@@ -13920,11 +13920,14 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Debes seleccionar que tipo de agricultura quieres
-
-    Tradicional:
-
-    Regenerativa:'
+  m_text: "Debes seleccionar que tipo de agricultura quieres\nTradicional: Se refiere
+    a los metodos convencionales que se han practicado durante mucho tiempo, que
+    a menudo implican el uso intensivo de insumos externos como pesticidas, fertilizantes
+    quimicos y maquinaria pesada. Este enfoque tiende a priorizar la maximazacion
+    de rendimientos a corto plazo\nRegenerativa: Mejoran las condiciones productivas
+    de una parcela con un da\xF1o minimo o impacto positivo hacia el medio ambiente.
+    Algunos ejemplos son: agricultura bajo sombra, rotacion de cultivos, incorporacion
+    de cultivos de cobertura"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
   m_sharedMaterial: {fileID: 6999240042432075934, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
@@ -13951,15 +13954,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -14060,11 +14063,18 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Debes seleccionar un tipo de financiamiento
 
-    Tradicional:
+    Formal: Consta de un
+    prestamo formal entre el productor y una institucion financiera regulada, cuenta
+    con una tasa de interes baja pero se tarda en aprobar o muchas veces es denegada
 
     Informal:
+    Consta de un prestamo informal entre el productor y otro individuo o entidad
+    que termina siendo de alto costo (intereses) o castigando el precio final del
+    productor, es aprobada al instante
 
-    Verqor:'
+    Verqor: Este consta de un prestamo seguro,
+    agil y remoto, se solicita de manera remota y se tarda en aprobar un plazo de
+    7 dias habiles, ademas que la tasa de interes no es tan alta'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
   m_sharedMaterial: {fileID: 6999240042432075934, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
@@ -14091,15 +14101,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -15198,7 +15208,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -40}
   m_SizeDelta: {x: 1300, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895284097
@@ -15223,8 +15233,10 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Debes seleccionar si contar con un seguro o no
 
-    Este te protegera
-    en caso de alguna situacion extraordinaria para no perder todo tu dinero'
+    Opera de manera tradicional
+    pero para cubrir posibles perdidas (totales o parciales), ocasionadas por fenomenos
+    naturales, inseguridad o en algunos casos (muy raros) por el manejo equivocado
+    de los insumos'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
   m_sharedMaterial: {fileID: 6999240042432075934, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
@@ -15251,8 +15263,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
-  m_fontSizeBase: 100
+  m_fontSize: 80
+  m_fontSizeBase: 80
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
