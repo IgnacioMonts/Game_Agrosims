@@ -5,6 +5,10 @@ using UnityEngine;
 public class botonCosecha : MonoBehaviour
 {
     public GameObject cultivo;
+		public int monedas = 0;
+
+    //una referencia a una instancia unica
+    public static botonCosecha instance;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -13,6 +17,8 @@ public class botonCosecha : MonoBehaviour
 		if (Player)
 		{
 			cultivo.SetActive(false);
+			monedas = monedas + 100;
+			HUD.instance.ActualizarMonedas();
 		}
 		else
 		{

@@ -15104,6 +15104,7 @@ GameObject:
   - component: {fileID: 1819658930}
   - component: {fileID: 1819658935}
   - component: {fileID: 1819658934}
+  - component: {fileID: 1819658936}
   m_Layer: 5
   m_Name: Financiamiento
   m_TagString: Untagged
@@ -15228,6 +15229,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SiguientePantalla: {fileID: 1380901785}
   HUD: {fileID: 1819658929}
+--- !u!114 &1819658936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819658929}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1798c3be52d44874958a9e1be8e7359, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Verqor: {fileID: 298470770}
+  monedas: 0
 --- !u!1 &1825310928
 GameObject:
   m_ObjectHideFlags: 0
