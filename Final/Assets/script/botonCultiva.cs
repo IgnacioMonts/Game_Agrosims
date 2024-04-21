@@ -5,6 +5,10 @@ using UnityEngine;
 public class botonCultiva : MonoBehaviour
 {
 	public GameObject cultivo;
+	public GameObject boton;
+	public GameObject botonPrincipal;
+	[SerializeField] private int cantidadPuntos;
+	[SerializeField] private contadorMonedas puntaje;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -13,6 +17,9 @@ public class botonCultiva : MonoBehaviour
 		if (Player)
 		{
 			cultivo.SetActive(true);
+			boton.SetActive(true);
+			botonPrincipal.SetActive(false);
+			puntaje.RestarPuntos(cantidadPuntos);
 		}
 		else
 		{

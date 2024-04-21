@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: wheat
+  m_Name: tomate
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,13 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: 1594954227, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
+      value: {fileID: 449199885, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
     - time: 20
-      value: {fileID: 225658783, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
+      value: {fileID: -1056129575, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
     - time: 40
-      value: {fileID: 885446507, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
+      value: {fileID: 1420072711, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
     - time: 60
-      value: {fileID: 1335400756, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
+      value: {fileID: -203240273, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,10 +50,10 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: 1594954227, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
-    - {fileID: 225658783, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
-    - {fileID: 885446507, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
-    - {fileID: 1335400756, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
+    - {fileID: 449199885, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
+    - {fileID: -1056129575, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
+    - {fileID: 1420072711, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
+    - {fileID: -203240273, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

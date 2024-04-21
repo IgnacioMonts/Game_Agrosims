@@ -16,7 +16,7 @@ public class decision : MonoBehaviour
             HUD.SetActive(true);
             pulsado = false;
         }else{
-            print("mostrando informacion personaje");
+            print("mostrando siguiente pantalla");
             SiguientePantalla.SetActive(true);
             HUD.SetActive(false);
             pulsado = true;
