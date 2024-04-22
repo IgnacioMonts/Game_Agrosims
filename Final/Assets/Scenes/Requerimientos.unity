@@ -662,6 +662,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 278937226}
   m_CullTransparentMesh: 1
+--- !u!1 &285483541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 285483543}
+  - component: {fileID: 285483542}
+  m_Layer: 0
+  m_Name: mainManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &285483542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285483541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d43e6712ab04417887e56078ab8e17b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  financiamiento: 0
+--- !u!4 &285483543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285483541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 932.459, y: 396.87347, z: 5.1940355}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &298470770
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +793,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1819658935}
         m_TargetAssemblyTypeName: decision, Assembly-CSharp
         m_MethodName: Decision
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1819658936}
+        m_TargetAssemblyTypeName: financiamiento, Assembly-CSharp
+        m_MethodName: Verqor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1769,6 +1826,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1819658935}
         m_TargetAssemblyTypeName: decision, Assembly-CSharp
         m_MethodName: Decision
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1819658936}
+        m_TargetAssemblyTypeName: financiamiento, Assembly-CSharp
+        m_MethodName: Formal
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13513,6 +13582,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1819658936}
+        m_TargetAssemblyTypeName: financiamiento, Assembly-CSharp
+        m_MethodName: Informal
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1444614147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13920,14 +14001,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Debes seleccionar que tipo de agricultura quieres\nTradicional: Se refiere
-    a los metodos convencionales que se han practicado durante mucho tiempo, que
-    a menudo implican el uso intensivo de insumos externos como pesticidas, fertilizantes
+  m_text: 'Debes seleccionar que tipo de agricultura quieres
+
+    Tradicional: Se
+    refiere a los metodos convencionales que se han practicado durante mucho tiempo,
+    que a menudo implican el uso intensivo de insumos externos como pesticidas, fertilizantes
     quimicos y maquinaria pesada. Este enfoque tiende a priorizar la maximazacion
-    de rendimientos a corto plazo\nRegenerativa: Mejoran las condiciones productivas
-    de una parcela con un da\xF1o minimo o impacto positivo hacia el medio ambiente.
+    de rendimientos a corto plazo
+
+    Regenerativa: Mejoran las condiciones productivas
+    de una parcela con un deterioro minimo o impacto positivo hacia el medio ambiente.
     Algunos ejemplos son: agricultura bajo sombra, rotacion de cultivos, incorporacion
-    de cultivos de cobertura"
+    de cultivos de cobertura'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
   m_sharedMaterial: {fileID: 6999240042432075934, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
@@ -18325,3 +18410,4 @@ SceneRoots:
   - {fileID: 559610177}
   - {fileID: 1825310932}
   - {fileID: 782284529}
+  - {fileID: 285483543}

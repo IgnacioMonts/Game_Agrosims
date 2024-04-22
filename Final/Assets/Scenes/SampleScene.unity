@@ -3909,7 +3909,7 @@ PrefabInstance:
     - target: {fileID: 5835006181347031640, guid: 0c3564979d52046e6aaffc055835c132, type: 3}
       propertyPath: boton
       value: 
-      objectReference: {fileID: 2087789719}
+      objectReference: {fileID: 1143382534}
     - target: {fileID: 8092403115709293385, guid: 0c3564979d52046e6aaffc055835c132, type: 3}
       propertyPath: m_Name
       value: Wheat (8)
@@ -10428,7 +10428,7 @@ GameObject:
   - component: {fileID: 1143382538}
   - component: {fileID: 1143382537}
   - component: {fileID: 1143382536}
-  - component: {fileID: 1143382535}
+  - component: {fileID: 1143382539}
   m_Layer: 0
   m_Name: Cosecha trigo
   m_TagString: Untagged
@@ -10436,25 +10436,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1143382535
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1143382534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 769be16e2649b40099b464fe53d0b4d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cultivo: {fileID: 1393884157}
-  boton: {fileID: 2087789719}
-  botonPrincipal: {fileID: 1143382534}
-  cantidadPuntos: 100
-  puntaje: {fileID: 1842778816}
-  cantidadCultivos: 9
-  puntajeCultivos: {fileID: 1538375952}
 --- !u!61 &1143382536
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10568,6 +10549,25 @@ Transform:
   - {fileID: 573678143}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1143382539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143382534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769be16e2649b40099b464fe53d0b4d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cultivo: {fileID: 1393884157}
+  boton: {fileID: 2087789719}
+  botonPrincipal: {fileID: 1143382534}
+  cantidadPuntos: 100
+  puntaje: {fileID: 1842778816}
+  cantidadCultivos: 9
+  puntajeCultivos: {fileID: 1538375952}
 --- !u!1 &1153395144
 GameObject:
   m_ObjectHideFlags: 0

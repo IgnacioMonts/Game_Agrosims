@@ -5,12 +5,20 @@ using UnityEngine;
 
 public class financiamiento : MonoBehaviour
 {
-    private bool pulsado = false;
+    //private bool pulsado = false;
     
+    public void Formal() {
+        mainManager.Instance.financiamiento = 1000;
+        print("Financiamiento formal: " + mainManager.Instance.financiamiento);
+    }
 
-    public void Moneda() {
-        //Activa y desactiva la pantalla de creadores al pulsar el boton
-        if(pulsado){   
-        } 
+    public void Informal() {
+        mainManager.Instance.financiamiento = 500;
+        print("Financiamiento informal: " + mainManager.Instance.financiamiento);
+    }
+
+    public void Verqor() {
+        mainManager.Instance.financiamiento = 1500;
+        print("Financiamiento Verqor: " + mainManager.Instance.financiamiento);
     }
 }
