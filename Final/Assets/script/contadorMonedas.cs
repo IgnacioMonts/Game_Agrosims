@@ -9,9 +9,10 @@ public class contadorMonedas : MonoBehaviour
     private int puntos;
     private TextMeshProUGUI textoContador;
 
-    private void Start() {
+    public void Start() {
         textoContador = GetComponent<TextMeshProUGUI>();
-        puntos += mainManager.Instance.financiamiento; //sirve para que en requerimientos se muestre el financiamiento elegido
+        // se agrega el dinero del financiamiento al contador de monedas
+        puntos += mainManager.Instance.financiamiento;
     }
 
     public void Update() {

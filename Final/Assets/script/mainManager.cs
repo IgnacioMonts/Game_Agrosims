@@ -8,6 +8,11 @@ public class mainManager : MonoBehaviour
     public static mainManager Instance;
 
     public int financiamiento;
+    public int interes;
+
+    public bool seguro;
+
+    public bool agricultura;
 
     private void Awake() {
         if (Instance != null) {

@@ -13,12 +13,19 @@ public class botonCultiva : MonoBehaviour
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		player Player = collision.GetComponent<player>();
-
 		if (Player)
 		{
 			cultivo.SetActive(true);
 			botonPrincipal.SetActive(false);
-			puntaje.RestarPuntos(cantidadPuntos);
+			
+			if (mainManager.Instance.agricultura == true)
+			{
+				puntaje.RestarPuntos(cantidadPuntos + 10);
+			}
+			else
+			{
+				puntaje.RestarPuntos(cantidadPuntos);
+			}
 		}
 		else
 		{

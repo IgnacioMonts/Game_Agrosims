@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: 159438026}
   - component: {fileID: 159438030}
   - component: {fileID: 159438031}
+  - component: {fileID: 159438032}
   m_Layer: 5
   m_Name: Agricultura
   m_TagString: Untagged
@@ -334,6 +335,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SiguientePantalla: {fileID: 1825310928}
   HUD: {fileID: 159438025}
+--- !u!114 &159438032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159438025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5340b7c97fc34bdda20608c0f5db333, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &220714092
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +705,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   financiamiento: 0
+  seguro: 0
+  agricultura: 0
 --- !u!4 &285483543
 Transform:
   m_ObjectHideFlags: 0
@@ -2752,6 +2767,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 159438032}
+        m_TargetAssemblyTypeName: agricultura, Assembly-CSharp
+        m_MethodName: regenerativa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &854725940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3008,6 +3035,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1380901790}
         m_TargetAssemblyTypeName: decision, Assembly-CSharp
         m_MethodName: Decision
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1380901792}
+        m_TargetAssemblyTypeName: seguro, Assembly-CSharp
+        m_MethodName: no
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3427,6 +3466,18 @@ MonoBehaviour:
       - m_Target: {fileID: 1380901790}
         m_TargetAssemblyTypeName: decision, Assembly-CSharp
         m_MethodName: Decision
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1380901792}
+        m_TargetAssemblyTypeName: seguro, Assembly-CSharp
+        m_MethodName: si
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13365,6 +13416,7 @@ GameObject:
   - component: {fileID: 1380901786}
   - component: {fileID: 1380901791}
   - component: {fileID: 1380901790}
+  - component: {fileID: 1380901792}
   m_Layer: 5
   m_Name: Seguro
   m_TagString: Untagged
@@ -13487,6 +13539,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Informacion: {fileID: 779045252}
   HUD: {fileID: 1380901785}
+--- !u!114 &1380901792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380901785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e70ec249bccd04e9ab3320c0215b3a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1444614144
 GameObject:
   m_ObjectHideFlags: 0
@@ -13897,6 +13961,18 @@ MonoBehaviour:
       - m_Target: {fileID: 159438031}
         m_TargetAssemblyTypeName: decision, Assembly-CSharp
         m_MethodName: Decision
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 159438032}
+        m_TargetAssemblyTypeName: agricultura, Assembly-CSharp
+        m_MethodName: tradicional
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
