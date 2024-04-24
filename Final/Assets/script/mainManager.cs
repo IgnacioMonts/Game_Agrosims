@@ -13,6 +13,9 @@ public class mainManager : MonoBehaviour
     public bool seguro;
 
     public bool agricultura;
+    public bool agriculturaCosecha;
+    public int mujer;
+    public int hombre;
 
     private void Awake() {
         if (Instance != null) {

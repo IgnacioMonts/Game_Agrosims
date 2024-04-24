@@ -22,8 +22,14 @@ public class botonCosecha : MonoBehaviour
 			cultivo.SetActive(false);
 			boton.SetActive(true);
 			botonPrincipal.SetActive(false);
-			puntaje.SumarPuntos(cantidadPuntos);
 			puntajeCultivos.SumarPuntos(cantidadCultivos);
+			if(mainManager.Instance.agricultura == true)
+			{
+				puntaje.SumarPuntos(cantidadPuntos+20);
+			}
+			else {
+				puntaje.SumarPuntos(cantidadPuntos);
+			}
 		}
 		else
 		{

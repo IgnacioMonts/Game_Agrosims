@@ -4,38 +4,28 @@ using UnityEngine;
 
 public class precios : MonoBehaviour
 {
-    public GameObject maizTradicional;
-    public GameObject maizRegenerativa;
-    public GameObject trigoTradicional;
-    public GameObject trigoRegenerativa;
-    public GameObject papaTradicional;
-    public GameObject papaRegenerativa;
-    public GameObject tomateTradicional;
-    public GameObject tomateRegenerativa;
+    public GameObject Tradicional;
+    public GameObject Regenerativa;
+    public GameObject boton;
 
-    void Start() {
-        if(mainManager.Instance.agricultura == true)
-        {
-            maizTradicional.SetActive(false);
-            maizRegenerativa.SetActive(true);
-            trigoTradicional.SetActive(false);
-            trigoRegenerativa.SetActive(true);
-            papaTradicional.SetActive(false);
-            papaRegenerativa.SetActive(true);
-            tomateTradicional.SetActive(false);
-            tomateRegenerativa.SetActive(true);
+    void Update() {
+        if(boton.activeSelf == true) {
+            if(mainManager.Instance.agricultura == true)
+            {
+                Tradicional.SetActive(false);
+                Regenerativa.SetActive(true);
+                
+            }
+            else
+            {
+                Tradicional.SetActive(true);
+                Regenerativa.SetActive(false);
+            }
         }
-        else
-        {
-            maizTradicional.SetActive(true);
-            maizRegenerativa.SetActive(false);
-            trigoTradicional.SetActive(true);
-            trigoRegenerativa.SetActive(false);
-            papaTradicional.SetActive(true);
-            papaRegenerativa.SetActive(false);
-            tomateTradicional.SetActive(true);
-            tomateRegenerativa.SetActive(false);
-        }
+        else {
+            Tradicional.SetActive(false);
+            Regenerativa.SetActive(false);
+        } 
     }
     
 }

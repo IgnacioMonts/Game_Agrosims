@@ -6,11 +6,15 @@ public class agricultura : MonoBehaviour
 {
     public void tradicional() {
         mainManager.Instance.agricultura = false;
-        print("Agricultura tradicional: " + mainManager.Instance.agricultura);
+        mainManager.Instance.agriculturaCosecha = false;
+        print("Agricultura tradicional");
+        print("Cosecha tradicional");
     }
 
     public void regenerativa() {
         mainManager.Instance.agricultura = true;
-        print("Agricultura regenerativa: " + mainManager.Instance.agricultura);
+        mainManager.Instance.agriculturaCosecha = true;
+        print("Agricultura regenerativa");
+        print("Cosecha regenerativa");
     }
 }
