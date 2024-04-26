@@ -12,7 +12,7 @@ public class CanvasMenu : MonoBehaviour
 
     public void CargarEscenaMapa()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Requerimientos");
     }
 
     public void Creadores(){

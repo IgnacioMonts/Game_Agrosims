@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ajustes : MonoBehaviour
@@ -26,7 +27,7 @@ public class ajustes : MonoBehaviour
         }
     }
 
-    /*
+    
     public void Cerrar(){
         if(salir){
             pantallaAjustes.SetActive(true);
@@ -37,5 +38,9 @@ public class ajustes : MonoBehaviour
             HUD.SetActive(true);
             salir = true;
         }
-    }*/
+    }
+
+    public void CargarEscena() {
+        SceneManager.LoadScene("Menu");
+    }
 }
