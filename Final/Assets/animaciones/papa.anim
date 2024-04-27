@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: trigo
+  m_Name: papa
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,23 +21,13 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-<<<<<<< Updated upstream:Final/Assets/animaciones/trigo.anim
-      value: {fileID: -285143121, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
-    - time: 200.08333
-      value: {fileID: -1746073719, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
-    - time: 400
-      value: {fileID: 502848228, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
-    - time: 600
-      value: {fileID: -1207849956, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
-=======
-      value: {fileID: 1594954227, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
+      value: {fileID: 2133056738, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
     - time: 15
-      value: {fileID: 225658783, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
+      value: {fileID: -622635177, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
     - time: 30
-      value: {fileID: 885446507, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
+      value: {fileID: -1449117327, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
     - time: 45
-      value: {fileID: 1335400756, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
->>>>>>> Stashed changes:Final/Assets/animaciones/wheat.anim
+      value: {fileID: -1249159571, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -60,20 +50,16 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -285143121, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
-    - {fileID: -1746073719, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
-    - {fileID: 502848228, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
-    - {fileID: -1207849956, guid: 64470ee75ce5a48fe8e85b219bbff705, type: 3}
+    - {fileID: 2133056738, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
+    - {fileID: -622635177, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
+    - {fileID: -1449117327, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
+    - {fileID: -1249159571, guid: 705bed23a9c34df408bca2c966d985dd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-<<<<<<< Updated upstream:Final/Assets/animaciones/trigo.anim
-    m_StopTime: 600.0833
-=======
     m_StopTime: 45.083332
->>>>>>> Stashed changes:Final/Assets/animaciones/wheat.anim
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
