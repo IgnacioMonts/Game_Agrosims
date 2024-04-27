@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour{
 
     [SerializeField] private TMP_Text timertext;
@@ -11,7 +12,10 @@ public class Timer : MonoBehaviour{
 
         timerTime -= Time.deltaTime;
 
-        if (timerTime <0) timerTime = 0;
+        if(timerTime == 0){
+            //cargar escena de estadisticas
+            SceneManager.LoadScene("Estadisticas");
+        }
 
         minutes = (int)(timerTime / 60f);
         seconds = (int)(timerTime - minutes * 60f);

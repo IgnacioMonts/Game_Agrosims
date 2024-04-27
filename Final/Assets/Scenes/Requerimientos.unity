@@ -17531,21 +17531,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Debes seleccionar que tipo de agricultura quieres
-
-    Tradicional: Se
-    refiere a los metodos convencionales que se han practicado durante mucho tiempo,
-    que a menudo implican el uso intensivo de insumos externos como pesticidas, fertilizantes
-    quimicos y maquinaria pesada. Este enfoque tiende a priorizar la maximazacion
-    de rendimientos a corto plazo
-
-    Regenerativa: Mejoran las condiciones productivas
-    de una parcela con un deterioro minimo o impacto positivo hacia el medio ambiente.
-    Algunos ejemplos son: agricultura bajo sombra, rotacion de cultivos, incorporacion
-    de cultivos de cobertura'
+  m_text: "Debes seleccionar qu\xE9 tipo de agricultura quieres.\n\nTradicional:
+    Se refiere a los m\xE9todos convencionales que se han practicado durante mucho
+    tiempo, que a menudo implican el uso intensivo de insumos externos como pesticidas,
+    fertilizantes qu\xEDmicos y maquinaria pesada. Este enfoque tiende a priorizar
+    la maximizaci\xF3n de rendimientos a corto plazo.\n\nRegenerativa: Mejoran las
+    condiciones productivas de una parcela con un deterioro m\xEDnimo o impacto positivo
+    hacia el medio ambiente. Algunos ejemplos son: agricultura bajo sombra, rotaci\xF3n
+    de cultivos, incorporaci\xF3n de cultivos de cobertura."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
-  m_sharedMaterial: {fileID: 6999240042432075934, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
+  m_sharedMaterial: {fileID: 3274206062621922562, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -18089,23 +18085,18 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Debes seleccionar un tipo de financiamiento
-
-    Formal: Consta de un
-    prestamo formal entre el productor y una institucion financiera regulada, cuenta
-    con una tasa de interes baja pero se tarda en aprobar o muchas veces es denegada
-
-    Informal:
-    Consta de un prestamo informal entre el productor y otro individuo o entidad
-    que termina siendo de alto costo (intereses) o castigando el precio final del
-    productor, es aprobada al instante
-
-    Verqor: Este consta de un prestamo seguro,
-    agil y remoto, se solicita de manera remota y se tarda en aprobar un plazo de
-    7 dias habiles, ademas que la tasa de interes no es tan alta'
+  m_text: "Debes seleccionar un tipo de financiamiento:\n\nFormal: Constata de un
+    pr\xE9stamo formal entre el productor y una instituci\xF3n financiera regulada.
+    Cuenta con una tasa de inter\xE9s baja, pero se tarda en aprobar o muchas veces
+    es denegado.\n\nInformal: Constata de un pr\xE9stamo informal entre el productor
+    y otro individuo o entidad que termina siendo de alto costo (intereses) o castigando
+    el precio final del productor. Es aprobado al instante.\n\nVerqor: Este consta
+    de un pr\xE9stamo seguro, \xE1gil y remoto. Se solicita de manera remota y se
+    tarda en aprobar un plazo de 7 d\xEDas h\xE1biles. Adem\xE1s, la tasa de inter\xE9s
+    no es tan alta."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
-  m_sharedMaterial: {fileID: 6999240042432075934, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
+  m_sharedMaterial: {fileID: 3274206062621922562, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -20042,15 +20033,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Debes seleccionar si contar con un seguro o no
-
-    Opera de manera tradicional
-    pero para cubrir posibles perdidas (totales o parciales), ocasionadas por fenomenos
-    naturales, inseguridad o en algunos casos (muy raros) por el manejo equivocado
-    de los insumos'
+  m_text: "Debes seleccionar si contar con un seguro o no. Opera de manera tradicional,
+    pero para cubrir posibles p\xE9rdidas (totales o parciales), ocasionadas por
+    fen\xF3menos naturales, inseguridad o en algunos casos (muy raros) por el manejo
+    equivocado de los insumos."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
-  m_sharedMaterial: {fileID: 6999240042432075934, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
+  m_sharedMaterial: {fileID: 3274206062621922562, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
