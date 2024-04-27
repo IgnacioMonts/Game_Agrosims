@@ -11,6 +11,7 @@ public class botonCosecha : MonoBehaviour
 		[SerializeField] private contadorMonedas puntaje;
 		[SerializeField] private int cantidadCultivos;
 		[SerializeField] private contadorCultivos puntajeCultivos;
+		[SerializeField] private controladorJuego controladorJuego;
 
 
 	private void OnTriggerEnter2D(Collider2D collision)
@@ -19,6 +20,7 @@ public class botonCosecha : MonoBehaviour
 
 		if (Player)
 		{
+			controladorJuego.DesactivarTemporizador();
 			cultivo.SetActive(false);
 			boton.SetActive(true);
 			botonPrincipal.SetActive(false);
