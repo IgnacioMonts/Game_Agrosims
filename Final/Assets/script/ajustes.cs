@@ -13,7 +13,9 @@ public class ajustes : MonoBehaviour
     public GameObject pantallaAjustes;
     public GameObject HUD;
     public Image tache, palomita;
-    [SerializeField] private AudioSource audioSource;
+    //[SerializeField] private AudioSource audioSource;
+    private AudioSource audioSource;
+    private musicaFondo fondo;
 
     public void Ajustes(){
         // Toggle pause state
@@ -81,6 +83,7 @@ public class ajustes : MonoBehaviour
     {
         if (pantallaAjustes.activeSelf)
         {
+            audioSource = GameObject.Find("MusicaFondo").GetComponent<AudioSource>();
             if (audioSource.volume > 0.0f)
             {
                 audioSource.volume = 0.0f; // Silencio
@@ -91,6 +94,7 @@ public class ajustes : MonoBehaviour
                 audioSource.volume = 1.0f; // Volumen máximo
                 tache.gameObject.SetActive(false);
             }
+            
         }
     }
 
@@ -112,6 +116,7 @@ public class ajustes : MonoBehaviour
         {
             SceneManager.LoadScene("Menu");
         }
+        Time.timeScale = 1;
     }
 
 }

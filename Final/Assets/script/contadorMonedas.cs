@@ -17,6 +17,7 @@ public class contadorMonedas : MonoBehaviour
 
     public void Update() {
         textoContador.text = puntos.ToString();
+        DontDestroyOnLoad(GameObject.Find("contadorMonedas"));
     }
 
     public void SumarPuntos(int puntosEntrada) {

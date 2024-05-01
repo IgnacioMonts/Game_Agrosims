@@ -14,10 +14,9 @@ public class Timer : MonoBehaviour{
 
     private void Update()
     {
-
         timerTime -= Time.deltaTime;
 
-        if(timerTime == 0){
+        if(timerTime <= 0){
             //cargar escena de estadisticas
             SceneManager.LoadScene("Estadisticas");
         }
