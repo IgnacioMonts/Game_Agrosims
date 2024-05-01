@@ -22,14 +22,14 @@ public class Timer : MonoBehaviour{
             SceneManager.LoadScene("Estadisticas");
         }
 
-        if(timerTime <= 300 && !scriptEventos.PanelActivo && !panelMostrado){
+        if(timerTime <= 590 && !scriptEventos.PanelActivo && !panelMostrado){
             scriptEventos.PanelRandom();
             panelMostrado = true;
         }
 
         minutes = (int)(timerTime / 60f);
         seconds = (int)(timerTime - minutes * 60f);
-        
+
         timertext.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
     }

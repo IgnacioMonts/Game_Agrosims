@@ -23,7 +23,7 @@ public class controladorJuego : MonoBehaviour
         }
     }
 
-    private void CambiarContador() {
+    public void CambiarContador() {
         if(tiempoActual >= 0) {
             slider.value = tiempoActual;
         }

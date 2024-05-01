@@ -8,14 +8,25 @@ public class eventos : MonoBehaviour
     [SerializeField] private GameObject[] paneles; //Lista de paneles a mostrar
 
     [SerializeField] private contadorMonedas puntaje; //puntaje hasta el momento
+
+    [SerializeField] private controladorJuego[] timerCultivo; //Controlador del tiempo de cultivo
+
+    [SerializeField] private GameObject[] botonesCultivo; //Botones de cultivo
+
+    [SerializeField] private GameObject[] cultivos; //Cultivos
+
+    //[SerializeField] private GameObject[] botonesCosecha; //Botones de cosecha
+
     private GameObject panelActivo;
-    public GameObject botonCultiva;
-    public GameObject cultivo;
-    public GameObject botonCosecha;
+    //public GameObject botonCultiva;
+    //public GameObject cultivo;
+    //public GameObject botonCosecha;
     public bool PanelActivo {get; private set;}
     private bool estaPausado = false;
     private int puntajeSeguro;
     private int puntajeNuevo;
+    private bool habilitarCultivar = false;
+
 
     public void PanelRandom()
     {
@@ -62,22 +73,60 @@ public class eventos : MonoBehaviour
         }
     }
 
-    //Corrutina para desactivar los botones de cultivo por 2 minutos
-    private IEnumerator DesactivarBotonesCult()
+    //Función para activar o desactivar elementos de la escena
+    private void ActivarElementos(IEnumerable<GameObject> elems, bool value)
     {
-        botonCultiva.SetActive(false);
-        yield return new WaitForSeconds(120);
-        botonCultiva.SetActive(true);
+        foreach (var elem in elems)
+        {
+            elem.SetActive(value);
+        }
+    }
+
+    //Activa o desactiva los timers de los cultivos
+    private void ActivarTimers(bool value)
+    {
+        foreach (var timer in timerCultivo)
+        {
+            if (value)
+            {
+                timer.ActivarTemporizador();
+            }
+            else
+            {
+                timer.DesactivarTemporizador();
+            }
+        }
     }
 
     //Corrutina para las consecuencias de la tormenta
-    private IEnumerator Tormenta(){
-        botonCosecha.SetActive(false);
-        cultivo.SetActive(false);
+    private IEnumerator Tormenta()
+    {
+        ActivarElementos(cultivos, false);
+        ActivarElementos(botonesCultivo, false);
+        ActivarTimers(false);
+
         yield return new WaitForSeconds(60);
-        botonCultiva.SetActive(true);
+
+        ActivarElementos(botonesCultivo, true);
     }
 
+    public bool HabilitarCultivar
+    {
+        get { return habilitarCultivar; }
+    }
+
+    //Corrutina para desactivar los botones de cultivo por 2 minutos
+    private IEnumerator DesactivarBotonesCult()
+    {
+        habilitarCultivar = false;
+        ActivarElementos(botonesCultivo, false);
+        
+        yield return new WaitForSeconds(120);
+
+        habilitarCultivar = true;
+    }
+
+    //Función para regresar al juego
     public void Continuar()
     {
         // Desactivar el panel

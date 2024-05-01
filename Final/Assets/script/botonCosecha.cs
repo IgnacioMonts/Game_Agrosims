@@ -13,6 +13,7 @@ public class botonCosecha : MonoBehaviour
 		[SerializeField] private contadorCultivos puntajeCultivos;
 		[SerializeField] private controladorJuego controladorJuego;
 
+		[SerializeField] private eventos controladorCultivo;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -32,6 +33,11 @@ public class botonCosecha : MonoBehaviour
 			else {
 				puntaje.SumarPuntos(cantidadPuntos);
 			}
+
+			if (controladorCultivo.HabilitarCultivar)
+            {
+                boton.SetActive(true);
+            }
 		}
 		else
 		{

@@ -7743,9 +7743,26 @@ MonoBehaviour:
   - {fileID: 1864054020}
   - {fileID: 96631405}
   puntaje: {fileID: 1842778816}
-  botonCultiva: {fileID: 933632864}
-  cultivo: {fileID: 756461832}
-  botonCosecha: {fileID: 72328522}
+  timerCultivo:
+  - {fileID: 1148144628}
+  - {fileID: 1043652855}
+  - {fileID: 1859734614}
+  - {fileID: 490238528}
+  botonesCultivo:
+  - {fileID: 1943320225}
+  - {fileID: 2087789719}
+  - {fileID: 1686212452}
+  - {fileID: 810090593}
+  cultivos:
+  - {fileID: 755456452}
+  - {fileID: 1393884157}
+  - {fileID: 1167561574}
+  - {fileID: 1292563985}
+  botonesCosecha:
+  - {fileID: 583046412}
+  - {fileID: 1143382534}
+  - {fileID: 172405080}
+  - {fileID: 1619506863}
 --- !u!1 &585802653
 GameObject:
   m_ObjectHideFlags: 0
@@ -35662,7 +35679,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 276347621}
         m_TargetAssemblyTypeName: ajustes, Assembly-CSharp
-        m_MethodName: CargarEscena
+        m_MethodName: Salir
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

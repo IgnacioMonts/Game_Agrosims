@@ -105,4 +105,13 @@ public class ajustes : MonoBehaviour
         
     }
 
+    //Función que envia al usuario a la pantalla de inicio
+    public void Salir()
+    {
+        if (pantallaAjustes.activeSelf)
+        {
+            SceneManager.LoadScene("Menu");
+        }
+    }
+
 }
