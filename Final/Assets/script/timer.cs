@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour{
 
     private bool panelMostrado = false;
 
-    private int minutes, seconds, cents;
+    private int minutes, seconds;
 
     private void Update()
     {
@@ -22,15 +22,14 @@ public class Timer : MonoBehaviour{
             SceneManager.LoadScene("Estadisticas");
         }
 
-        if(timerTime <= 580 && !scriptEventos.PanelActivo && !panelMostrado){
+        if(timerTime <= 300 && !scriptEventos.PanelActivo && !panelMostrado){
             scriptEventos.PanelRandom();
             panelMostrado = true;
         }
 
         minutes = (int)(timerTime / 60f);
         seconds = (int)(timerTime - minutes * 60f);
-        cents = (int)((timerTime-(int)timerTime) *100f);
-
+        
         timertext.text = string.Format("{0:00}:{1:00}", minutes, seconds);
 
     }

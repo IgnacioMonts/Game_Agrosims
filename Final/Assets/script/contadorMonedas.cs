@@ -21,9 +21,12 @@ public class contadorMonedas : MonoBehaviour
 
     public void SumarPuntos(int puntosEntrada) {
         puntos += puntosEntrada;
+        Debug.Log("Added points. Total is now: " + puntos);
     }
 
     public void RestarPuntos(int puntosEntrada) {
         puntos -= puntosEntrada;
+        Debug.Log("Subtracted points. Total is now: " + puntos);
+
     }
 }

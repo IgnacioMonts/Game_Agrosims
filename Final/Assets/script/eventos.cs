@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class eventos : MonoBehaviour
@@ -9,6 +10,8 @@ public class eventos : MonoBehaviour
     [SerializeField] private contadorMonedas puntaje; //puntaje hasta el momento
     private GameObject panelActivo;
     public GameObject botonCultiva;
+    public GameObject cultivo;
+    public GameObject botonCosecha;
     public bool PanelActivo {get; private set;}
     private bool estaPausado = false;
     private int puntajeSeguro;
@@ -34,18 +37,16 @@ public class eventos : MonoBehaviour
         if (randomPanel == 0)
         {
             // Si el jugador tiene seguro, pierde el 20% de su dinero
-            if (mainManager.Instance.seguro)
+            if (mainManager.Instance.seguro == true)
             {
                 puntajeSeguro = (int)(puntaje.puntos * 0.25f);
                 puntaje.RestarPuntos(puntajeSeguro);
-                puntaje.Update();
             }
             //Si el jugador no tiene seguro, pierde el 50% de su dinero
             else
             {
                 puntajeSeguro = (int)(puntaje.puntos * 0.6f);
                 puntaje.RestarPuntos(puntajeSeguro);
-                puntaje.Update();
             }
         }
         else if(randomPanel == 1){
@@ -55,16 +56,26 @@ public class eventos : MonoBehaviour
             //Se resta el 5% del puntaje actual
             puntajeNuevo = (int)(puntaje.puntos * 0.05f);
             puntaje.RestarPuntos(puntajeNuevo);
-            puntaje.Update();
+        }
+        else if(randomPanel == 2){
+            StartCoroutine(Tormenta());
         }
     }
 
+    //Corrutina para desactivar los botones de cultivo por 2 minutos
     private IEnumerator DesactivarBotonesCult()
     {
         botonCultiva.SetActive(false);
         yield return new WaitForSeconds(120);
-        panelActivo.SetActive(false);
-        PanelActivo = false;
+        botonCultiva.SetActive(true);
+    }
+
+    //Corrutina para las consecuencias de la tormenta
+    private IEnumerator Tormenta(){
+        botonCosecha.SetActive(false);
+        cultivo.SetActive(false);
+        yield return new WaitForSeconds(60);
+        botonCultiva.SetActive(true);
     }
 
     public void Continuar()

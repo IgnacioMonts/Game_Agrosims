@@ -7744,6 +7744,8 @@ MonoBehaviour:
   - {fileID: 96631405}
   puntaje: {fileID: 1842778816}
   botonCultiva: {fileID: 933632864}
+  cultivo: {fileID: 756461832}
+  botonCosecha: {fileID: 72328522}
 --- !u!1 &585802653
 GameObject:
   m_ObjectHideFlags: 0
@@ -13315,8 +13317,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\xA1LA ROPAAAA! Hay una gran tormenta en curso, todos los cultivos que
-    actualmente esta creciendo est\xE1n da\xF1ados, por lo que no obtienes ganacias
-    de estos. Adem\xE1s, no podr\xE1s plantar por 1 minuto."
+    actualmente est\xE1n creciendo se han da\xF1ado, por lo que no obtienes ganacias
+    de estos. Adem\xE1s, no podr\xE1s cultivar por 1 minuto."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
   m_sharedMaterial: {fileID: 3274206062621922562, guid: bfd4401b4c7936d44b4a5078d410c96e, type: 2}
