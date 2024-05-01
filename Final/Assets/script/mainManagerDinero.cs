@@ -5,7 +5,8 @@ using UnityEngine;
 public class mainManagerDinero : MonoBehaviour
 {
     public static mainManagerDinero Instance;
-    public int dinero;
+    [SerializeField] public int dinero;
+    [SerializeField] public int cultivos;
     private void Awake() {
         if (Instance != null) {
             Destroy(gameObject);
@@ -14,4 +15,5 @@ public class mainManagerDinero : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject); 
     }
+
 }

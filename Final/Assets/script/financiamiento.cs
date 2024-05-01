@@ -9,7 +9,7 @@ public class financiamiento : MonoBehaviour
         mainManager.Instance.financiamiento = 1000;
         mainManager.Instance.financiamientoValor = 1;
         print("Financiamiento formal: " + mainManager.Instance.financiamiento);
-        mainManager.Instance.interes = 0.15;
+        mainManager.Instance.interes = 150;
         print("Interes: " + mainManager.Instance.interes);
     }
 
@@ -17,7 +17,7 @@ public class financiamiento : MonoBehaviour
         mainManager.Instance.financiamiento = 1000;
         mainManager.Instance.financiamientoValor = 2;
         print("Financiamiento informal: " + mainManager.Instance.financiamiento);
-        mainManager.Instance.interes = 0.40;
+        mainManager.Instance.interes = 400;
         print("Interes: " + mainManager.Instance.interes);
     }
 
@@ -25,7 +25,7 @@ public class financiamiento : MonoBehaviour
         mainManager.Instance.financiamiento = 1500;
         mainManager.Instance.financiamientoValor = 3;
         print("Financiamiento Verqor: " + mainManager.Instance.financiamiento);
-        mainManager.Instance.interes = 0.25;
+        mainManager.Instance.interes = 375;
         print("Interes: " + mainManager.Instance.interes);
     }
 }

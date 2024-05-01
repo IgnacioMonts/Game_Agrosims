@@ -7,21 +7,27 @@ public class estadisticas : MonoBehaviour
 {
     public TextMeshProUGUI dinero;
     public TextMeshProUGUI dineroIntereses;
-    private contadorMonedas puntaje;
+    public TextMeshProUGUI cultivos;
     int intereses;
     int total;
 
     // Start is called before the first frame update
     void Start()
     {
-        intereses = (int) mainManager.Instance.interes * mainManager.Instance.financiamiento;
-        total = puntaje.puntos - intereses;
+        interes();
     }
 
     // Update is called once per frame
     void Update()
     {
-        dinero.text = puntaje.puntos.ToString();
+        dinero.text = mainManagerDinero.Instance.dinero.ToString();
         dineroIntereses.text = total.ToString();
+        cultivos.text = mainManagerDinero.Instance.cultivos.ToString();
+    }
+
+    private void interes() {
+        intereses = mainManager.Instance.interes;
+        Debug.Log("Intereses: " + intereses);
+        total = mainManagerDinero.Instance.dinero - intereses;
     }
 }
