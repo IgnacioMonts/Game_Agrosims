@@ -6,7 +6,12 @@ public class Timer : MonoBehaviour{
     [SerializeField] private TMP_Text timertext;
     [SerializeField, Tooltip("Tiempo en segundos") ] private float timerTime;
 
+    [SerializeField] private eventos scriptEventos;
+
+    private bool panelMostrado = false;
+
     private int minutes, seconds, cents;
+
     private void Update()
     {
 
@@ -15,6 +20,11 @@ public class Timer : MonoBehaviour{
         if(timerTime == 0){
             //cargar escena de estadisticas
             SceneManager.LoadScene("Estadisticas");
+        }
+
+        if(timerTime <= 580 && !scriptEventos.PanelActivo && !panelMostrado){
+            scriptEventos.PanelRandom();
+            panelMostrado = true;
         }
 
         minutes = (int)(timerTime / 60f);

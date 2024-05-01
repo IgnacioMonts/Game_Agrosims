@@ -13,6 +13,11 @@ public class ajustes : MonoBehaviour
     public GameObject pantallaAjustes;
     public GameObject HUD;
 
+    public Image tache, palomita;
+
+    [SerializeField] private AudioSource audioSource;
+
+
     public void Ajustes(){
         //Activa y desactiva la pantalla de creadores al pulsar el boton
         if(pulsado){
@@ -40,7 +45,32 @@ public class ajustes : MonoBehaviour
         }
     }
 
-    public void CargarEscena() {
-        SceneManager.LoadScene("Menu");
+    public void DetenerMusica()
+    {
+        if (pantallaAjustes.activeSelf)
+        {
+            if (audioSource.volume > 0.0f)
+            {
+                audioSource.volume = 0.0f; // Silencio
+                tache.gameObject.SetActive(true);
+            }
+            else
+            {
+                audioSource.volume = 1.0f; // Volumen máximo
+                tache.gameObject.SetActive(false);
+            }
+        }
     }
+
+    //Funcion que cuando haces click a un boton te pone la pantalla en grande del juego
+    public void PantallaCompleta()
+    {
+        if (pantallaAjustes.activeSelf)
+        {
+            Screen.fullScreen = !Screen.fullScreen;
+            palomita.gameObject.SetActive(!palomita.gameObject.activeSelf);
+        }
+        
+    }
+
 }

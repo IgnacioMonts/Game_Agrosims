@@ -6,7 +6,7 @@ using Unity.UI;
 
 public class contadorMonedas : MonoBehaviour
 {
-    private int puntos;
+    public int puntos;
     private TextMeshProUGUI textoContador;
 
     public void Start() {

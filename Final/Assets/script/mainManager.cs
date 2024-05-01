@@ -10,7 +10,6 @@ public class mainManager : MonoBehaviour
     public int financiamiento;
     public int financiamientoValor;
     public int interes;
-
     public bool seguro;
 
     public bool agricultura;
