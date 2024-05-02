@@ -15,7 +15,7 @@ public class eventos : MonoBehaviour
 
     [SerializeField] private GameObject[] cultivos; //Cultivos
 
-    //[SerializeField] private GameObject[] botonesCosecha; //Botones de cosecha
+    [SerializeField] private GameObject[] botonesCosecha; //Botones de cosecha
 
     private GameObject panelActivo;
     //public GameObject botonCultiva;
@@ -45,7 +45,7 @@ public class eventos : MonoBehaviour
         Time.timeScale = estaPausado ? 0 : 1;
 
         // Si el panel que se muestra es el de la nevada
-        if (randomPanel == 0)
+        if (randomPanel == 3)
         {
             // Si el jugador tiene seguro, pierde el 20% de su dinero
             if (mainManager.Instance.seguro == true)
@@ -61,14 +61,14 @@ public class eventos : MonoBehaviour
             }
         }
         else if(randomPanel == 1){
-            //Los botones de cultivar se desactivan por 2 minutos y se activan de nuevo después de este tiempo
-            StartCoroutine(DesactivarBotonesCult());
-            
             //Se resta el 5% del puntaje actual
-            puntajeNuevo = (int)(puntaje.puntos * 0.05f);
+            puntajeNuevo = (int)(System.Math.Abs(puntaje.puntos) * 0.05f);
             puntaje.RestarPuntos(puntajeNuevo);
+            
+            //Los botones de cultivar se desactivan por 2 minutos y se activan de nuevo después de este tiempo
+            StartCoroutine(Sequia());
         }
-        else if(randomPanel == 2){
+        else if(randomPanel == 0){
             StartCoroutine(Tormenta());
         }
     }
@@ -103,9 +103,23 @@ public class eventos : MonoBehaviour
     {
         ActivarElementos(cultivos, false);
         ActivarElementos(botonesCultivo, false);
+        ActivarElementos(botonesCosecha, false);
         ActivarTimers(false);
 
         yield return new WaitForSeconds(60);
+
+        ActivarElementos(botonesCultivo, true);
+    }
+
+    //Corrutina para desactivar los botones de cultivo por 2 minutos
+    private IEnumerator Sequia()
+    {
+        ActivarElementos(cultivos, false);
+        ActivarElementos(botonesCultivo, false);
+        ActivarElementos(botonesCosecha, false);
+        ActivarTimers(false);
+
+        yield return new WaitForSeconds(120);
 
         ActivarElementos(botonesCultivo, true);
     }

@@ -21,7 +21,7 @@ public class Timer : MonoBehaviour{
             SceneManager.LoadScene("Estadisticas");
         }
 
-        if(timerTime <= 590 && !scriptEventos.PanelActivo && !panelMostrado){
+        if(timerTime <= 540 && !scriptEventos.PanelActivo && !panelMostrado){
             scriptEventos.PanelRandom();
             panelMostrado = true;
         }

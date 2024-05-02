@@ -119,4 +119,12 @@ public class ajustes : MonoBehaviour
         Time.timeScale = 1;
     }
 
+    public void SalirJuego() {
+        if(pantallaAjustes.activeSelf)
+        {
+            SceneManager.LoadScene("Estadisticas");
+        }
+        Time.timeScale = 1;
+    }
+
 }

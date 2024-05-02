@@ -7643,9 +7643,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   paneles:
-  - {fileID: 1571224836}
-  - {fileID: 1864054020}
   - {fileID: 96631405}
+  - {fileID: 1864054020}
   puntaje: {fileID: 1842778816}
   timerCultivo:
   - {fileID: 1148144628}
@@ -7662,6 +7661,11 @@ MonoBehaviour:
   - {fileID: 1393884157}
   - {fileID: 1167561574}
   - {fileID: 1292563985}
+  botonesCosecha:
+  - {fileID: 1619506863}
+  - {fileID: 583046412}
+  - {fileID: 172405080}
+  - {fileID: 1143382534}
 --- !u!1 &585802653
 GameObject:
   m_ObjectHideFlags: 0
@@ -36469,7 +36473,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 276347621}
         m_TargetAssemblyTypeName: ajustes, Assembly-CSharp
-        m_MethodName: Salir
+        m_MethodName: SalirJuego
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

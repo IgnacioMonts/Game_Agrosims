@@ -11,5 +11,7 @@ public class requerimientos : MonoBehaviour
 
     public void Salir() {
         SceneManager.LoadScene("Menu");
+        Time.timeScale = 1;
     }
+
 }
