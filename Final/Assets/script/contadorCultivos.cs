@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Unity.UI;
+
 
 public class contadorCultivos : MonoBehaviour
 {
@@ -22,6 +22,6 @@ public class contadorCultivos : MonoBehaviour
     }
 
     public void RestarPuntos(int puntosEntrada) {
-          puntos -= puntosEntrada;
+        puntos -= puntosEntrada;
     }
 }
