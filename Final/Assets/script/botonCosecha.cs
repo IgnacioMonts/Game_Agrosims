@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class botonCosecha : MonoBehaviour
 {
-		public GameObject cultivo;
+    public GameObject cultivo;
 		public GameObject boton;
 		public GameObject botonPrincipal;
 		[SerializeField] private int cantidadPuntos;
@@ -13,7 +13,7 @@ public class botonCosecha : MonoBehaviour
 		[SerializeField] private contadorCultivos puntajeCultivos;
 		[SerializeField] private controladorJuego controladorJuego;
 
-		[SerializeField] private eventos controladorCultivo;
+		//[SerializeField] private eventos controladorCultivo;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
@@ -26,7 +26,6 @@ public class botonCosecha : MonoBehaviour
 			boton.SetActive(true);
 			botonPrincipal.SetActive(false);
 			puntajeCultivos.SumarPuntos(cantidadCultivos);
-			mainManagerDinero.Instance.cultivos += cantidadCultivos;
 			if(mainManager.Instance.agricultura == true)
 			{
 				puntaje.SumarPuntos(cantidadPuntos+20);

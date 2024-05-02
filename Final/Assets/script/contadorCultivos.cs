@@ -6,7 +6,7 @@ using Unity.UI;
 
 public class contadorCultivos : MonoBehaviour
 {
-    private int puntos;
+    public int puntos;
     private TextMeshProUGUI textoContador;
 
     private void Start() {
@@ -21,7 +21,7 @@ public class contadorCultivos : MonoBehaviour
         puntos += puntosEntrada; 
     }
 
-    //public void RestarPuntos(int puntosEntrada) {
-    //    puntos -= puntosEntrada;
-    //}
+    public void RestarPuntos(int puntosEntrada) {
+          puntos -= puntosEntrada;
+    }
 }

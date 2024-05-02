@@ -13,6 +13,8 @@ public class clickCosecha : MonoBehaviour, IPointerDownHandler
 	[SerializeField] private int cantidadCultivos;
 	[SerializeField] private contadorCultivos puntajeCultivos;
 	[SerializeField] private controladorJuego controladorJuego;
+	//[SerializeField] private eventos controladorCultivo;
+
 
 	public void OnPointerDown(PointerEventData eventData)
 	{
@@ -21,7 +23,6 @@ public class clickCosecha : MonoBehaviour, IPointerDownHandler
 		boton.SetActive(true);
 		botonPrincipal.SetActive(false);
 		puntajeCultivos.SumarPuntos(cantidadCultivos);
-		mainManagerDinero.Instance.cultivos += cantidadCultivos;
 		if(mainManager.Instance.agricultura == true)
 		{
 			puntaje.SumarPuntos(cantidadPuntos+20);

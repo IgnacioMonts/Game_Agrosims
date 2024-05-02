@@ -1,6 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-//using Unity.VisualScripting;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class eventos : MonoBehaviour
@@ -25,13 +26,13 @@ public class eventos : MonoBehaviour
     private bool estaPausado = false;
     private int puntajeSeguro;
     private int puntajeNuevo;
-    private bool habilitarCultivar = false;
+    //private bool habilitarCultivar = false;
 
 
     public void PanelRandom()
     {
         // Escoger un panel aleatorio
-        int randomPanel = Random.Range(0, paneles.Length);
+        int randomPanel = UnityEngine.Random.Range(0, paneles.Length);
         panelActivo = paneles[randomPanel];
 
         // Activa el panel
@@ -45,36 +46,36 @@ public class eventos : MonoBehaviour
         Time.timeScale = estaPausado ? 0 : 1;
 
         // Si el panel que se muestra es el de la nevada
-        if (randomPanel == 3)
+        if (randomPanel == 0)
         {
             // Si el jugador tiene seguro, pierde el 20% de su dinero
             if (mainManager.Instance.seguro == true)
             {
-                puntajeSeguro = (int)(puntaje.puntos * 0.25f);
+                puntajeSeguro = (int)(Math.Abs(puntaje.puntos) * 0.25f);
                 puntaje.RestarPuntos(puntajeSeguro);
             }
             //Si el jugador no tiene seguro, pierde el 50% de su dinero
             else
             {
-                puntajeSeguro = (int)(puntaje.puntos * 0.6f);
+                puntajeSeguro = (int)(Math.Abs(puntaje.puntos) * 0.6f);
                 puntaje.RestarPuntos(puntajeSeguro);
             }
         }
         else if(randomPanel == 1){
             //Se resta el 5% del puntaje actual
-            puntajeNuevo = (int)(System.Math.Abs(puntaje.puntos) * 0.05f);
+            puntajeNuevo = (int)(Math.Abs(puntaje.puntos) * 0.05f);
             puntaje.RestarPuntos(puntajeNuevo);
             
             //Los botones de cultivar se desactivan por 2 minutos y se activan de nuevo después de este tiempo
             StartCoroutine(Sequia());
         }
-        else if(randomPanel == 0){
+        else if(randomPanel == 2){
             StartCoroutine(Tormenta());
         }
     }
 
     //Función para activar o desactivar elementos de la escena
-    private void ActivarElementos(IEnumerable<GameObject> elems, bool value)
+    public void ActivarElementos(IEnumerable<GameObject> elems, bool value)
     {
         foreach (var elem in elems)
         {
@@ -83,7 +84,7 @@ public class eventos : MonoBehaviour
     }
 
     //Activa o desactiva los timers de los cultivos
-    private void ActivarTimers(bool value)
+    public void ActivarTimers(bool value)
     {
         foreach (var timer in timerCultivo)
         {
@@ -104,7 +105,7 @@ public class eventos : MonoBehaviour
         ActivarElementos(cultivos, false);
         ActivarElementos(botonesCultivo, false);
         ActivarElementos(botonesCosecha, false);
-        ActivarTimers(false);
+        ActivarTimers(false);   
 
         yield return new WaitForSeconds(60);
 
@@ -122,22 +123,6 @@ public class eventos : MonoBehaviour
         yield return new WaitForSeconds(120);
 
         ActivarElementos(botonesCultivo, true);
-    }
-
-    public bool HabilitarCultivar
-    {
-        get { return habilitarCultivar; }
-    }
-
-    //Corrutina para desactivar los botones de cultivo por 2 minutos
-    private IEnumerator DesactivarBotonesCult()
-    {
-        habilitarCultivar = false;
-        ActivarElementos(botonesCultivo, false);
-        
-        yield return new WaitForSeconds(120);
-
-        habilitarCultivar = true;
     }
 
     //Función para regresar al juego

@@ -11,11 +11,12 @@ public class mainManager : MonoBehaviour
     public int financiamientoValor;
     public int interes;
     public bool seguro;
-
     public bool agricultura;
     public bool agriculturaCosecha;
     public int mujer;
     public int hombre;
+
+    public bool puedeMoverse = true;
 
     private void Awake() {
         if (Instance != null) {
