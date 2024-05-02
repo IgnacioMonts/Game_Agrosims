@@ -34,11 +34,6 @@ public class botonCosecha : MonoBehaviour
 			else {
 				puntaje.SumarPuntos(cantidadPuntos);
 			}
-
-			if (controladorCultivo.HabilitarCultivar)
-			{
-				boton.SetActive(true);
-			}
 		}
 		else
 		{
