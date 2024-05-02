@@ -6,7 +6,8 @@ using Unity.UI;
 
 public class contadorMonedas : MonoBehaviour
 {
-    private int puntos;
+    public int puntos;
+
     private TextMeshProUGUI textoContador;
 
     public void Start() {
@@ -17,13 +18,17 @@ public class contadorMonedas : MonoBehaviour
 
     public void Update() {
         textoContador.text = puntos.ToString();
+        mainManagerDinero.Instance.dinero = puntos;
     }
 
     public void SumarPuntos(int puntosEntrada) {
         puntos += puntosEntrada;
+        Debug.Log("Added points. Total is now: " + puntos);
     }
 
     public void RestarPuntos(int puntosEntrada) {
         puntos -= puntosEntrada;
+        Debug.Log("Subtracted points. Total is now: " + puntos);
     }
+
 }

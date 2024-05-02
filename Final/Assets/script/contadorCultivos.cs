@@ -18,7 +18,7 @@ public class contadorCultivos : MonoBehaviour
     }
 
     public void SumarPuntos(int puntosEntrada) {
-        puntos += puntosEntrada;
+        puntos += puntosEntrada; 
     }
 
     //public void RestarPuntos(int puntosEntrada) {

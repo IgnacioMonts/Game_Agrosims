@@ -8,8 +8,8 @@ public class mainManager : MonoBehaviour
     public static mainManager Instance;
 
     public int financiamiento;
+    public int financiamientoValor;
     public int interes;
-
     public bool seguro;
 
     public bool agricultura;

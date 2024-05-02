@@ -9,12 +9,14 @@ public class botonCultiva : MonoBehaviour
 	public GameObject botonPrincipal;
 	[SerializeField] private int cantidadPuntos;
 	[SerializeField] private contadorMonedas puntaje;
+	[SerializeField] private controladorJuego controladorJuego;
 
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
 		player Player = collision.GetComponent<player>();
 		if (Player)
 		{
+			controladorJuego.ActivarTemporizador();
 			cultivo.SetActive(true);
 			botonPrincipal.SetActive(false);
 			
