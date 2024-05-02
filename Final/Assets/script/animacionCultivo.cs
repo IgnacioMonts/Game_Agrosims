@@ -5,7 +5,7 @@ using UnityEngine;
 public class animacionCultivo : MonoBehaviour
 {
 	Animator anim;
-	public GameObject boton;
+	public GameObject boton; //Boton cosechar
 	//public GameObject CosechaTradicional;
 	//public GameObject CosechaRegenerativa;
 

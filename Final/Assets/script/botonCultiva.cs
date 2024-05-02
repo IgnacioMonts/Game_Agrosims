@@ -5,8 +5,8 @@ using UnityEngine;
 public class botonCultiva : MonoBehaviour
 {
 	public GameObject cultivo;
-	public GameObject boton;
-	public GameObject botonPrincipal;
+	public GameObject boton; //Boton cosechar
+	public GameObject botonPrincipal; //Boton cultivar
 	[SerializeField] private int cantidadPuntos;
 	[SerializeField] private contadorMonedas puntaje;
 	[SerializeField] private controladorJuego controladorJuego;

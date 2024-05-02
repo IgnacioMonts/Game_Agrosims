@@ -13,6 +13,8 @@ public class clickCosecha : MonoBehaviour, IPointerDownHandler
 	[SerializeField] private int cantidadCultivos;
 	[SerializeField] private contadorCultivos puntajeCultivos;
 	[SerializeField] private controladorJuego controladorJuego;
+	//[SerializeField] private eventos controladorCultivo;
+
 
 	public void OnPointerDown(PointerEventData eventData)
 	{
