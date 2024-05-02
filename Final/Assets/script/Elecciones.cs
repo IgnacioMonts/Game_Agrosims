@@ -1,22 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro; //Para InputField
-using Unity.VisualScripting;
-using UnityEngine;
 using UnityEngine.Networking;
-using UnityEngine.SceneManagement; //Para UnityRequest
-using System.Text;
+using UnityEngine;
 
-public class JuegoAcabado : MonoBehaviour
+public class Elecciones : MonoBehaviour
 {
     public struct DatosFinales
     {
-        public string idRegistro;
-        //public int idElecciones;
-        public int total;
-        public int decisionesBuenas;
-        public int decisionesMalas;
-        public int decisionesNeutras;
+        public string financiamiento;
+        public string seguro;
+        public string agricultura;
     }
 
     //Corrutina para enviar datos JSON al servidor
@@ -28,13 +21,44 @@ public class JuegoAcabado : MonoBehaviour
     // Corrutina para enviar JSON al servidor
     IEnumerator EnviarJSONServidor()
     {
+
+        DatosFinales datos = new DatosFinales();
+
+        if(mainManager.Instance.financiamientoValor == 1)
+        {
+            //set active true para formal
+            datos.financiamiento = "Formal";
+
+        }
+        else if(mainManager.Instance.financiamientoValor == 2)
+        {
+            datos.financiamiento = "Informal";
+        }
+        else if(mainManager.Instance.financiamientoValor == 3)
+        {
+            datos.financiamiento = "Verqor";
+        }
+
+        if(mainManager.Instance.seguro == true)
+        {
+            //set active true para seguro
+            datos.seguro = "Si";
+        }
+        else
+        {
+            datos.seguro = "No";
+        }
+
+        if(mainManager.Instance.agricultura == true)
+        {
+            datos.agricultura = "Regenerativa";
+        }
+        else
+        {
+            datos.agricultura = "Tradicional";
+        }
+
         //Llenar la estructura de datos con lo que el usuario escribió
-        DatosFinales datos;
-        datos.idRegistro = PlayerPrefs.GetString("IdRegistro");
-        datos.total = mainManagerDinero.Instance.dinero;
-        datos.decisionesBuenas = mainManagerDinero.Instance.decisionesBuenas;
-        datos.decisionesMalas = mainManagerDinero.Instance.decisionesMalas;
-        datos.decisionesNeutras = mainManagerDinero.Instance.decisionesNeutras;
 
         string datosJSON = JsonUtility.ToJson(datos); 
         print("JSON enviado: " + datosJSON);
@@ -54,4 +78,6 @@ public class JuegoAcabado : MonoBehaviour
 
         request.Dispose(); // Libera la memoria
     }
+
 }
+
