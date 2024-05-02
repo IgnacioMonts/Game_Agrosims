@@ -33,6 +33,7 @@ public class controladorJuego : MonoBehaviour
             cultivo.SetActive(false);
             boton.SetActive(true);
             botonPrincipal.SetActive(false);
+            slider.value = tiempoMaximo;
         }
     }
 

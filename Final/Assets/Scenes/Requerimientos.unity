@@ -787,6 +787,7 @@ MonoBehaviour:
   agriculturaCosecha: 0
   mujer: 0
   hombre: 0
+  puedeMoverse: 1
 --- !u!4 &285483543
 Transform:
   m_ObjectHideFlags: 0

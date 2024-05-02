@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
+//using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI; // Required for UI elements
 
@@ -392,8 +392,11 @@ public class DecisionesAdm : MonoBehaviour
 
         //Imprimir en consola el resultado de las decisiones
         Debug.Log("Decisiones buenas: " + decisionesBuenas);
+        mainManagerDinero.Instance.decisionesBuenas = decisionesBuenas;
         Debug.Log("Decisiones intermedias: " + decisionesIntermedias);
+        mainManagerDinero.Instance.decisionesNeutras = decisionesIntermedias;
         Debug.Log("Decisiones malas: " + decisionesMalas);
+        mainManagerDinero.Instance.decisionesMalas = decisionesMalas;
     }
     
 }

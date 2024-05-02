@@ -17,6 +17,7 @@ public class contadorMonedas : MonoBehaviour
 
     public void Update() {
         textoContador.text = puntos.ToString();
+        mainManagerDinero.Instance.dinero = puntos;
     }
 
     public void SumarPuntos(int puntosEntrada) {

@@ -8,6 +8,9 @@ public class estadisticas : MonoBehaviour
     public TextMeshProUGUI dinero;
     public TextMeshProUGUI dineroIntereses;
     public TextMeshProUGUI cultivos;
+    public TextMeshProUGUI decisionesBuenas;
+    public TextMeshProUGUI decisionesMalas;
+    public TextMeshProUGUI decisionesNeutras;
     int intereses;
     int total;
 
@@ -23,6 +26,9 @@ public class estadisticas : MonoBehaviour
         dinero.text = mainManagerDinero.Instance.dinero.ToString();
         dineroIntereses.text = total.ToString();
         cultivos.text = mainManagerDinero.Instance.cultivos.ToString();
+        decisionesBuenas.text = mainManagerDinero.Instance.decisionesBuenas.ToString();
+        decisionesMalas.text = mainManagerDinero.Instance.decisionesMalas.ToString();
+        decisionesNeutras.text = mainManagerDinero.Instance.decisionesNeutras.ToString();
     }
 
     private void interes() {

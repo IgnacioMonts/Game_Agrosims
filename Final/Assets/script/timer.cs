@@ -40,7 +40,7 @@ public class Timer : MonoBehaviour{
         ultimaDecision += Time.deltaTime;
 
 
-        if(timerTime == 0f){
+        if(timerTime <= 0f){
             //cargar escena de estadisticas
             SceneManager.LoadScene("Estadisticas");
         }
