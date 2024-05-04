@@ -2787,6 +2787,7 @@ GameObject:
   - component: {fileID: 386209205}
   - component: {fileID: 386209204}
   - component: {fileID: 386209208}
+  - component: {fileID: 386209209}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -2897,6 +2898,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvaCreadores: {fileID: 856262939}
   canvaMenu: {fileID: 386209203}
+--- !u!114 &386209209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 386209203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4abeb627dec0f67468edd4746c2c439a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ifUsuario: {fileID: 1400509636}
 --- !u!1 &434415081
 GameObject:
   m_ObjectHideFlags: 0
@@ -13656,6 +13670,18 @@ MonoBehaviour:
       - m_Target: {fileID: 386209208}
         m_TargetAssemblyTypeName: CanvasMenu, Assembly-CSharp
         m_MethodName: CargarEscenaMapa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 386209209}
+        m_TargetAssemblyTypeName: InicioJuego, Assembly-CSharp
+        m_MethodName: EnviarJSON
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -26,7 +26,7 @@ public class botonCosecha : MonoBehaviour
 			boton.SetActive(true);
 			botonPrincipal.SetActive(false);
 			puntajeCultivos.SumarPuntos(cantidadCultivos);
-			mainManagerDinero.Instance.cultivos = cantidadCultivos;
+			mainManagerDinero.Instance.AddCultivos(cantidadCultivos);
 			if(mainManager.Instance.agricultura == true)
 			{
 				puntaje.SumarPuntos(cantidadPuntos+20);

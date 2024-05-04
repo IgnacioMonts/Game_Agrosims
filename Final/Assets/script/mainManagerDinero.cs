@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class mainManagerDinero : MonoBehaviour
 {
+
     public static mainManagerDinero Instance;
     [SerializeField] public int dinero;
     [SerializeField] public int cultivos;
@@ -19,4 +20,10 @@ public class mainManagerDinero : MonoBehaviour
         DontDestroyOnLoad(gameObject); 
     }
 
+    public void AddCultivos(int cantidad) {
+        cultivos += cantidad;
+    }
+
 }
+
+
