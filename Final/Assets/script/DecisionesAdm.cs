@@ -19,6 +19,8 @@ public class DecisionesAdm : MonoBehaviour
     [SerializeField] private GameObject[] botonesCultivo; //Botones de cultivo
 
     [SerializeField] private GameObject[] botonesCosecha; //Botones de cosecha
+    
+    [SerializeField] private controladorJuego[] timerCultivo; //Controlador del tiempo de cultivo
 
     [SerializeField] private contadorCultivos[] contadorCultivos; 
     [SerializeField] private eventos scriptEventos;
@@ -255,7 +257,7 @@ public class DecisionesAdm : MonoBehaviour
         cultivos[3].SetActive(false);
         botonesCultivo[3].SetActive(false);
         botonesCosecha[3].SetActive(false);
-        scriptEventos.ActivarTimers(false);
+        timerCultivo[3].gameObject.SetActive(false);
         yield return new WaitForSeconds(40);
         botonesCultivo[3].SetActive(true);
     }
@@ -370,8 +372,8 @@ public class DecisionesAdm : MonoBehaviour
     
     //Co-rutina para la retroalimentación
     IEnumerator Retro(){
-        //Espera 10 segundos
-        yield return new WaitForSeconds(10);
+        //Espera 8 segundos
+        yield return new WaitForSeconds(8);
 
         //Desactiva la tarjeta de retroalimentacion
         tarjetasRetro[0].SetActive(false);

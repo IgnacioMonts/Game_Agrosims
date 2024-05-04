@@ -19266,6 +19266,11 @@ MonoBehaviour:
   - {fileID: 1143382534}
   - {fileID: 172405080}
   - {fileID: 1619506863}
+  timerCultivo:
+  - {fileID: 1148144628}
+  - {fileID: 1043652855}
+  - {fileID: 1859734614}
+  - {fileID: 490238528}
   contadorCultivos:
   - {fileID: 1521076920}
   - {fileID: 1538375952}

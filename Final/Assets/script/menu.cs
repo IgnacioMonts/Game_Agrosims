@@ -11,11 +11,6 @@ public class CanvasMenu : MonoBehaviour
     public GameObject canvaCreadores;
     public GameObject canvaMenu;
 
-    public void CargarEscenaMapa()
-    {
-        SceneManager.LoadScene("Requerimientos");
-    }
-
     public void Creadores(){
         //Activa y desactiva la pantalla de creadores al pulsar el boton
         if(!pulsado){
