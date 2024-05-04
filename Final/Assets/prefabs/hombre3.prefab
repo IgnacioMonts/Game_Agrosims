@@ -122,8 +122,8 @@ GameObject:
   - component: {fileID: 354176636085011645}
   - component: {fileID: 809303873075790355}
   - component: {fileID: 8715884114527013667}
-  - component: {fileID: 4034980745708075562}
   - component: {fileID: 8615019691028147266}
+  - component: {fileID: 7813576321075584773}
   m_Layer: 0
   m_Name: hombre3
   m_TagString: Player
@@ -292,19 +292,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.105257, y: 1.3754508}
   m_EdgeRadius: 0
---- !u!114 &4034980745708075562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8257273080888972669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85a78fe3ca0c15e469d11823e88d4747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 5
 --- !u!114 &8615019691028147266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,3 +306,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventory:
     slots: []
+--- !u!114 &7813576321075584773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8257273080888972669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8bbb881d11ea140ad71604fe9293e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 5

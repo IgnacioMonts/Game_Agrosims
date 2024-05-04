@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 7098192987152935557}
   - component: {fileID: 2442207640912052995}
   - component: {fileID: 1505339667530806568}
-  - component: {fileID: 4011306875536772468}
   - component: {fileID: 1004513530730596376}
   - component: {fileID: 338617590854068008}
+  - component: {fileID: 2646364430319926798}
   m_Layer: 0
   m_Name: mujer3
   m_TagString: Player
@@ -162,19 +162,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4011306875536772468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045628878983093344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85a78fe3ca0c15e469d11823e88d4747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 5
 --- !u!114 &1004513530730596376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +197,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2646364430319926798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045628878983093344}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02cecf937a297524fbd089834ac299bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 5
 --- !u!1 &7213237449026544413
 GameObject:
   m_ObjectHideFlags: 0

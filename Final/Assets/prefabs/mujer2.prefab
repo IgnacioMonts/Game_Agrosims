@@ -11,10 +11,10 @@ GameObject:
   - component: {fileID: 4399780731625700580}
   - component: {fileID: 3772528784884748249}
   - component: {fileID: 7781303526438609043}
-  - component: {fileID: 7445263303595555763}
   - component: {fileID: 2922958461102528514}
   - component: {fileID: 3387717066200689929}
   - component: {fileID: 2425736815498691575}
+  - component: {fileID: 3006927434383698395}
   m_Layer: 0
   m_Name: mujer2
   m_TagString: Player
@@ -111,19 +111,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7445263303595555763
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 437851263571579888}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85a78fe3ca0c15e469d11823e88d4747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 5
 --- !u!114 &2922958461102528514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,6 +197,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.2114729, y: 1.2845395}
   m_EdgeRadius: 0
+--- !u!114 &3006927434383698395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 437851263571579888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 195827362bae3c34da9a3c4bfd8ed22c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 5
 --- !u!1 &789786814843141572
 GameObject:
   m_ObjectHideFlags: 0

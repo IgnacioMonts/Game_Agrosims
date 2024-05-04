@@ -121,9 +121,9 @@ GameObject:
   - component: {fileID: 1741951481873173343}
   - component: {fileID: 3886911773326331495}
   - component: {fileID: 9154366725260147269}
-  - component: {fileID: 6892899915363321623}
   - component: {fileID: 5075073503613163948}
   - component: {fileID: 8293277848444448905}
+  - component: {fileID: 223642301761643644}
   m_Layer: 0
   m_Name: hombre2
   m_TagString: Player
@@ -271,19 +271,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0654888, y: 1.3798645}
   m_EdgeRadius: 0
---- !u!114 &6892899915363321623
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7516626424331748060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85a78fe3ca0c15e469d11823e88d4747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidad: 5
 --- !u!114 &5075073503613163948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,3 +306,16 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &223642301761643644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7516626424331748060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf29d7b69a770ab4aae03b57e30b00b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 5

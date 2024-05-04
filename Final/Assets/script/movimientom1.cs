@@ -1,6 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class Movimiento : MonoBehaviour
+public class movimientom1 : MonoBehaviour
 {
     public float velocidad = 5.0f; // Velocidad de movimiento
     private Animator animator; // Referencia al Animator
@@ -22,20 +24,20 @@ public class Movimiento : MonoBehaviour
             if (Input.GetKey(KeyCode.W))
             {
                 movimiento += Vector3.up;
-                animator.Play("arribah1");
+                animator.Play("arribam1");
 
             }
             else if (Input.GetKey(KeyCode.UpArrow)) //aplica movimiento con tecla arriba
             {
                 movimiento += Vector3.up;
-                animator.Play("arribah1");
+                animator.Play("arribam1");
 
 
             }
             else if (Input.GetKey(KeyCode.S))
             {
                 movimiento += Vector3.down;
-                animator.Play("abajoh1");
+                animator.Play("abajom1");
 
 
 
@@ -43,7 +45,7 @@ public class Movimiento : MonoBehaviour
             else if (Input.GetKey(KeyCode.DownArrow)) //aplica movimiento con tecla abajo
             {
                 movimiento += Vector3.down;
-                animator.Play("abajoh1");
+                animator.Play("abajom1");
 
 
 
@@ -51,7 +53,7 @@ public class Movimiento : MonoBehaviour
             if (Input.GetKey(KeyCode.A))
             {
                 movimiento += Vector3.left;
-                animator.Play("izquierdah1");
+                animator.Play("izquierdam1");
 
 
 
@@ -59,14 +61,14 @@ public class Movimiento : MonoBehaviour
             else if (Input.GetKey(KeyCode.LeftArrow)) //aplica movimiento con tecla izquierda
             {
                 movimiento += Vector3.left;
-                animator.Play("izquierdah1");
+                animator.Play("izquierdam1");
 
 
             }
             else if (Input.GetKey(KeyCode.D))
             {
                 movimiento += Vector3.right;
-                animator.Play("derechah1");
+                animator.Play("derecham1");
 
 
 
@@ -74,7 +76,7 @@ public class Movimiento : MonoBehaviour
             else if (Input.GetKey(KeyCode.RightArrow)) //aplica movimiento con tecla derecha
             {
                 movimiento += Vector3.right;
-                animator.Play("derechah1");
+                animator.Play("derecham1");
 
 
 
@@ -87,7 +89,7 @@ public class Movimiento : MonoBehaviour
             }
             else
             {
-                animator.Play("reposoh1");
+                animator.Play("reposom1");
 
             }
         }
