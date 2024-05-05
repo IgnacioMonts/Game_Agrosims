@@ -67,7 +67,7 @@ public class Elecciones : MonoBehaviour
 
         //Mandamos directamente la cadena del JSON al servidor y el tipo de dato que estamos enviando
         //lo corremos en el servidor con node.js
-        UnityWebRequest request = UnityWebRequest.Post("http://3.226.32.1:8080/elecciones", datosJSON, "application/json");
+        UnityWebRequest request = UnityWebRequest.Post("http://localhost:4000/elecciones", datosJSON, "application/json");
 
         yield return request.SendWebRequest();
 

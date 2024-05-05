@@ -11,6 +11,8 @@ public class mainManagerDinero : MonoBehaviour
     [SerializeField] public int decisionesBuenas;
     [SerializeField] public int decisionesMalas;
     [SerializeField] public int decisionesNeutras;
+
+    [SerializeField] public int dineroIntereses;
     private void Awake() {
         if (Instance != null) {
             Destroy(gameObject);

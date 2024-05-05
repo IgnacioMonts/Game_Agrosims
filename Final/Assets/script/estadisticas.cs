@@ -34,6 +34,7 @@ public class estadisticas : MonoBehaviour
     private void interes() {
         intereses = mainManager.Instance.interes;
         Debug.Log("Intereses: " + intereses);
-        total = mainManagerDinero.Instance.dinero - intereses;
+        mainManagerDinero.Instance.dineroIntereses = mainManagerDinero.Instance.dinero - intereses;
+        total = mainManagerDinero.Instance.dineroIntereses;
     }
 }

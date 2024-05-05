@@ -36,7 +36,7 @@ public class InicioJuego : MonoBehaviour
 
         //Mandamos directamente la cadena del JSON al servidor y el tipo de dato que estamos enviando
         //lo corremos en el servidor con node.js
-        UnityWebRequest request = UnityWebRequest.Post("http://3.226.32.1:8080/login", datosJSON, "application/json");
+        UnityWebRequest request = UnityWebRequest.Post("http://localhost:4000/check", datosJSON, "application/json");
         // // Set the data and content type
         // byte[] bodyRaw = Encoding.UTF8.GetBytes(datosJSON);
         // request.uploadHandler = new UploadHandlerRaw(bodyRaw);

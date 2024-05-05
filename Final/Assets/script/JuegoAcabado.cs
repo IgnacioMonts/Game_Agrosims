@@ -31,7 +31,7 @@ public class JuegoAcabado : MonoBehaviour
         DatosFinales datos;
 
         datos.idPartida = PlayerPrefs.GetString("idPartida");
-        datos.total = mainManagerDinero.Instance.dinero;
+        datos.total = mainManagerDinero.Instance.dineroIntereses;
         datos.decisionesBuenas = mainManagerDinero.Instance.decisionesBuenas;
         datos.decisionesMalas = mainManagerDinero.Instance.decisionesMalas;
         datos.decisionesNeutras = mainManagerDinero.Instance.decisionesNeutras;
@@ -41,7 +41,7 @@ public class JuegoAcabado : MonoBehaviour
 
         //Mandamos directamente la cadena del JSON al servidor y el tipo de dato que estamos enviando
         //lo corremos en el servidor con node.js
-        UnityWebRequest request = UnityWebRequest.Post("http://3.226.32.1:8080/salir", datosJSON, "application/json");
+        UnityWebRequest request = UnityWebRequest.Post("http://localhost:4000/salir", datosJSON, "application/json");
         // // Set the data and content type
         // byte[] bodyRaw = Encoding.UTF8.GetBytes(datosJSON);
         // request.uploadHandler = new UploadHandlerRaw(bodyRaw);
