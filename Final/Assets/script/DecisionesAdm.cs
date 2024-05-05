@@ -259,6 +259,7 @@ public class DecisionesAdm : MonoBehaviour
         botonesCosecha[3].SetActive(false);
         timerCultivo[3].gameObject.SetActive(false);
         yield return new WaitForSeconds(40);
+        timerCultivo[3].gameObject.SetActive(true);
         botonesCultivo[3].SetActive(true);
     }
 
@@ -326,7 +327,7 @@ public class DecisionesAdm : MonoBehaviour
         DecisionActiva = false;
         Time.timeScale = 1;
 
-        retro[1].text = "Decidiste tomarte solamente un té de manzanilla. Afortunadamente, con el paso de los días los malestares se fueron. \nAunque no fue la mejor decisión, tu salud es primero.";
+        retro[1].text = "Decidiste tomarte un té de manzanilla. Afortunadamente, con el paso de los días los malestares se fueron, pero tu salud es primero.";
 
         Continuar();
         tarjetasRetro[1].SetActive(true);
