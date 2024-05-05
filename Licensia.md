@@ -51,6 +51,6 @@ Incluye:
 
 Licencia: Los recursos contenidos en este paquete se pueden utilizar tanto para proyectos gratuitos como comerciales. Se le permite utilizar el Contenido con licencia en proyectos comerciales ilimitados. NO se le permite revender, sublicenciar o distribuir activos a terceros como archivos independientes. 
 
-Eres libre de modificar o cambiar cualquiera de los recursos para adaptarlos a tus necesidades creativas. No se requiere crédito, pero se agradece mucho..
+Eres libre de modificar o cambiar cualquiera de los recursos para adaptarlos a tus necesidades creativas. No se requiere crédito, pero se agradece mucho...
 
 
